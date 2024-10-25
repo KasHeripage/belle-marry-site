@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belle Marry - Loja de Beleza</title>
+    <style>
+        /* Estilos básicos e reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Cores */
+        :root {
+            --rosa: #ff99cc;
+            --branco: #ffffff;
+            --dourado: #ffd700;
+            --preto: #333333;
+        }
+
+        /* Estilizando o corpo da página */
+        body {
+            background-color: var(--branco);
+            color: var(--preto);
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: var(--rosa);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: var(--dourado);
+            font-size: 2.5em;
+        }
+
+        /* Menu de navegação */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: var(--dourado);
+            padding: 10px;
+        }
+
+        nav a {
+            color: var(--branco);
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Banner principal */
+        .banner {
+            background-color: var(--rosa);
+            padding: 50px 20px;
+            text-align: center;
+            color: var(--branco);
+        }
+
+        .banner h2 {
+            font-size: 2em;
+        }
+
+        /* Seção de produtos */
+        .produtos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .produto-card {
+            background-color: var(--branco);
+            border: 1px solid var(--rosa);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .produto-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .produto-card h3 {
+            color: var(--preto);
+            margin: 10px 0;
+        }
+
+        .produto-card p {
+            color: var(--rosa);
+            font-weight: bold;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: var(--dourado);
+            color: var(--branco);
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Belle Marry</h1>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Produtos</a>
+        <a href="#">Sobre Nós</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <!-- Banner Principal -->
+    <section class="banner">
+        <h2>Descubra a Beleza das Melhores Marcas</h2>
+        <p>Produtos de Natura, O Boticário, Avon e Eudora para você se sentir incrível!</p>
+    </section>
+
+    <!-- Seção de Produtos -->
+    <section class="produtos">
+        <!-- Produto Exemplo -->
+        <div class="produto-card">
+            <img src="https://via.placeholder.com/150" alt="Produto 1">
+            <h3>Perfume Natura</h3>
+            <p>R$ 129,90</p>
+        </div>
+
+        <div class="produto-card">
+            <img src="https://via.placeholder.com/150" alt="Produto 2">
+            <h3>Hidratante O Boticário</h3>
+            <p>R$ 89,90</p>
+        </div>
+
+        <div class="produto-card">
+            <img src="https://via.placeholder.com/150" alt="Produto 3">
+            <h3>Batom Avon</h3>
+            <p>R$ 29,90</p>
+        </div>
+
+        <div class="produto-card">
+            <img src="https://via.placeholder.com/150" alt="Produto 4">
+            <h3>Loção Eudora</h3>
+            <p>R$ 45,90</p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Belle Marry - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
